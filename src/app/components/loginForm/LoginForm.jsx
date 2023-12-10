@@ -20,7 +20,7 @@ const LoginForm = () => {
 
     const handleLogin = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/login', credentials);
+            const response = await axios.post('https://backend-api-thio.onrender.com/login', credentials);
             const token = response.data.token;
 
             console.log('Token:', token);
